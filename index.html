@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Merchandising - AZUD</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.2/papaparse.min.js"></script>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="media/logo-azud.png" alt="AZUD" width="200" height="70">
+            </div>
+            <div class="client-selection">
+                <label for="cliente">Cliente:</label>
+                <div class="select-container">
+                    <input type="text" id="cliente" placeholder="Escriba para buscar..." autocomplete="off">
+                    <div id="dropdown-clientes" class="dropdown-menu">
+                        <!-- Se llenará dinámicamente -->
+                    </div>
+                </div>
+            </div>
+            <div class="budget-display">
+                <span>Presupuesto 2025: </span>
+                <span id="presupuesto">0.00</span>€
+                <div class="budget-progress">
+                    <div class="budget-bar" style="width: 0%"></div>
+                </div>
+            </div>
+            <div class="cart-icon">
+                <span class="material-icons">shopping_cart</span>
+                <span id="cart-counter">0</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <!-- Panel de mensajes para errores o advertencias -->
+            <div id="mensaje-panel" class="hidden">
+                <div class="mensaje-contenido">
+                    <h3 id="mensaje-titulo">Información</h3>
+                    <p id="mensaje-texto"></p>
+                    <div id="mensaje-acciones">
+                        <!-- Se añadirán dinámicamente -->
+                    </div>
+                </div>
+            </div>
+
+            <aside class="categories">
+                <div class="search-container">
+                    <input type="text" id="producto-search" placeholder="Buscar por nombre o código..." autocomplete="off">
+                    <button id="search-button" class="search-button">
+                        <span class="material-icons">search</span>
+                    </button>
+                </div>
+                <h2>Categorías</h2>
+                <ul id="category-list">
+                    <!-- Se cargará dinámicamente desde el CSV -->
+                </ul>
+            </aside>
+
+            <section class="products">
+                <h2 id="current-category">Todos los productos</h2>
+                <div id="products-grid">
+                    <!-- Se cargará dinámicamente desde el CSV -->
+                </div>
+                <!-- La paginación se añadirá dinámicamente aquí -->
+            </section>
+        </div>
+    </main>
+
+    <!-- Modal del carrito -->
+    <div id="cart-modal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Carrito de Compra</h2>
+                <span class="close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div id="cart-items">
+                    <!-- Se cargará dinámicamente -->
+                </div>
+                <!-- Comentario del pedido -->
+                <div class="cart-comment">
+                    <label for="cart-comment-input">Comentario (máx. 100 palabras):</label>
+                    <textarea id="cart-comment-input" rows="3" placeholder="Añade aquí tus notas…" style="width:100%;"></textarea>
+                    <div id="comment-count" style="text-align:right;font-size:12px;color:#666;">
+                    0 / 100 palabras
+                    </div>
+                </div>
+                <div class="cart-summary">
+                    <div class="total">
+                        <span>Total:</span>
+                        <span id="cart-total">0.00</span>€
+                    </div>
+                    <div id="budget-warning" class="warning hidden">
+                        ¡Atención! El pedido excede el presupuesto del cliente.
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="export-pdf" class="azud-btn">Exportar PDF</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de selección de talla -->
+    <div id="size-modal" class="modal">
+        <div class="modal-content size-content">
+            <div class="modal-header">
+                <h2 id="size-product-name">Seleccionar Talla</h2>
+                <span class="size-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <p>Seleccione la talla para este producto:</p>
+                <select id="size-selector">
+                    <!-- Se cargará dinámicamente -->
+                </select>
+            </div>
+            <div class="modal-footer">
+                <button id="add-with-size" class="azud-btn">Añadir al Carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Script para jsPDF -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <!-- Íconos de Material Design -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Herramienta de diagnóstico (quitar en producción) -->
+    <script src="diagnostico.js"></script>
+    <!-- Script principal -->
+    <script src="main.js"></script>
+
+    <!-- Modal para imagen ampliada -->
+    <div id="image-modal" class="modal">
+        <div class="modal-content image-modal-content">
+            <div class="modal-header">
+                <h2 id="image-product-name">Detalle del Producto</h2>
+                <span class="image-close">&times;</span>
+            </div>
+            <div class="modal-body">
+                <div class="product-image-container">
+                    <img id="modal-product-image" src="" alt="Imagen del producto">
+                </div>
+                <div id="product-description-container" class="product-description-container">
+                    <!-- Se mostrará la descripción del producto si está disponible -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="add-from-image-modal" class="azud-btn">Añadir al Carrito</button>
+            </div>
+        </div>
+    </div>
+        <!-- Modal del configurador de packs -->
+    <div id="pack-config-modal" class="modal">
+        <div class="modal-content pack-config-content">
+            <div class="modal-header">
+                <h2 id="pack-config-title">Configurar Pack</h2>
+                <span class="pack-config-close">&times;</span>
+            </div>
+            <div class="modal-body" id="pack-config-body">
+                <!-- Aquí se cargarán dinámicamente los productos del pack -->
+            </div>
+            <div class="modal-footer">
+                <div class="pack-config-summary">
+                    <div class="total">
+                        <span>Total:</span>
+                        <span id="pack-config-total">0.00</span>€
+                    </div>
+                </div>
+                <button id="add-pack-to-cart" class="azud-btn">Añadir al Carrito</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
