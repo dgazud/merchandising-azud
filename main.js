@@ -19,37 +19,37 @@ const packConfiguraciones = {
             {
                 nombre: "Maletín muestras AG",
                 cantidad: 1,
-                opciones: ["91000241"]  // Códigos de productos (diferentes tallas)
+                opciones: ["91000241"]  
             },
             {
                 nombre: "Catálogo AG",
                 cantidad: 25,
-                opciones: ["91000901"]  // Códigos de roll-ups disponibles
+                opciones: ["91000901"]  
             },
             {
                 nombre: "Tarifa AG",
                 cantidad: 1,
-                opciones: ["91000905"] // Códigos de bolígrafos disponibles
+                opciones: ["91000905"] 
             },
             {
                 nombre: "Gorra serigrafiada",
                 cantidad: 1,
-                opciones: ["91X00037"]  // Códigos de lonas disponibles
+                opciones: ["91000647"]  
             },
             {
                 nombre: "Polo de vestir manga corta",
                 cantidad: 1,
-                opciones: ["91X00011", "91X00012", "91X00013", "91X00014", "91X00015", "91X00016"]  // Códigos de lonas disponibles
+                opciones: ["91000915", "91000916", "91000917", "91000918", "91000919", "91000920", "91000921"] 
             },
             {
                 nombre: "Bolígrafo AZUD",
                 cantidad: 50,
-                opciones: ["91000053"]  // Códigos de lonas disponibles
+                opciones: ["91000053"] 
             },
             {
                 nombre: "Libreta de bolsillo",
                 cantidad: 50,
-                opciones: ["91000032"]  // Códigos de lonas disponibles
+                opciones: ["91000032"]  
             }
         ]
     },
@@ -59,42 +59,42 @@ const packConfiguraciones = {
             {
                 nombre: "Maletín muestras AG",
                 cantidad: 1,
-                opciones: ["91000241"]  // Códigos de productos (diferentes tallas)
+                opciones: ["91000241"]  
             },
             {
                 nombre: "Catálogo AG",
                 cantidad: 25,
-                opciones: ["91000901"]  // Códigos de roll-ups disponibles
+                opciones: ["91000901"]  
             },
             {
                 nombre: "Tarifa AG",
                 cantidad: 1,
-                opciones: ["91000905"] // Códigos de bolígrafos disponibles
+                opciones: ["91000905"] 
             },
             {
                 nombre: "Gorra serigrafiada",
                 cantidad: 1,
-                opciones: ["91X00037"]  // Códigos de lonas disponibles
+                opciones: ["91000647"] 
             },
             {
                 nombre: "Polo de vestir manga corta personalizado",
                 cantidad: 1,
-                opciones: ["91XJ0011", "91XJ0012", "91XJ0013", "91XJ0014", "91XJ0015", "91XJ0016"]  // Códigos de lonas disponibles
+                opciones: ["91XJ0011", "91XJ0012", "91XJ0013", "91XJ0014", "91XJ0015", "91XJ0016", "91XJ0017"]  
             },
             {
                 nombre: "Chaleco softshell personalizado",
                 cantidad: 1,
-                opciones: ["91XJ0022", "91XJ0023", "91XJ0024", "91XJ0025", "91XJ0026", "91XJ0027"]  // Códigos de lonas disponibles
+                opciones: ["91XJ0022", "91XJ0023", "91XJ0024", "91XJ0025", "91XJ0026"] 
             },
             {
                 nombre: "Bolígrafo AZUD",
                 cantidad: 50,
-                opciones: ["91000053"]  // Códigos de lonas disponibles
+                opciones: ["91000053"]  
             },
             {
                 nombre: "Libreta de bolsillo",
                 cantidad: 50,
-                opciones: ["91000032"]  // Códigos de lonas disponibles
+                opciones: ["91000032"]  
             }
         ]
     },
@@ -119,12 +119,12 @@ const packConfiguraciones = {
             {
                 nombre: "Gorra serigrafiada",
                 cantidad: 1,
-                opciones: ["91X00037"]  
+                opciones: ["91000647"]  
             },
             {
                 nombre: "Camisetas",
                 cantidad: 5,
-                opciones: ["91X00001", "91X00002", "91X00003", "91X00004", "91X00005"]  
+                opciones: ["91000861", "91000860", "91000859", "91000862", "91000405"]  
             },
             {
                 nombre: "Taza",
@@ -159,12 +159,12 @@ const packConfiguraciones = {
             {
                 nombre: "GOTERO AZUD PREMIER IMPRESIÓN 3D",
                 cantidad: 1,
-                opciones: ["91A00122"]
+                opciones: ["91A00123"]
             },
             {
                 nombre: "GOTERO AZUD GENIUN IMPRESIÓN 3D",
                 cantidad: 1,
-                opciones: ["91A00123"]  
+                opciones: ["91A00122"]  
             },
             {
                 nombre: "AZUD HELIX AUTOMATIC FT 2SV MG 130 M + SOPORTE",
@@ -184,7 +184,7 @@ const packConfiguraciones = {
             {
                 nombre: "Rollup normal",
                 cantidad: 1,
-                opciones: ["91B71637", "91B71638", "91B71639", "91B71640", "91B71641", "91B71642", "91B71643", "91B71644", "91B71645"]  
+                opciones: ["91000731", "91000792", "91000897", "91000899", "91000900", "91000896", "91000825", "91000956", "91000955", "91000903", "91000904", "91000902"]  
             },
             {
                 nombre: "USB VIDEOS",
@@ -214,12 +214,12 @@ const packConfiguraciones = {
             {
                 nombre: "Gorra serigrafiada",
                 cantidad: 1,
-                opciones: ["91X00037"] 
+                opciones: ["91000647"] 
             },
             {
                 nombre: "Polo de vestir manga corta",
                 cantidad: 1,
-                opciones: ["91X00011", "91X00012", "91X00013", "91X00014", "91X00015", "91X00016"]  
+                opciones: ["91000915", "91000916", "91000917", "91000918", "91000919", "91000920", "91000921"]  
             },
             {
                 nombre: "Bolígrafo AZUD",
@@ -254,7 +254,7 @@ const packConfiguraciones = {
             {
                 nombre: "Gorra serigrafiada",
                 cantidad: 1,
-                opciones: ["91X00037"] 
+                opciones: ["91000647"] 
             },
             {
                 nombre: "Polo de vestir manga corta personalizado",
@@ -264,7 +264,7 @@ const packConfiguraciones = {
             {
                 nombre: "Chaleco softshell personalizado",
                 cantidad: 1,
-                opciones: ["91XJ0022", "91XJ0023", "91XJ0024", "91XJ0025", "91XJ0026", "91XJ0027"] 
+                opciones: ["91XJ0022", "91XJ0023", "91XJ0024", "91XJ0025", "91XJ0026"]  
             },
             {
                 nombre: "Bolígrafo AZUD",
@@ -299,12 +299,12 @@ const packConfiguraciones = {
             {
                 nombre: "Gorra serigrafiada",
                 cantidad: 1,
-                opciones: ["91X00037"]  
+                opciones: ["91000647"]  
             },
             {
                 nombre: "Camisetas",
                 cantidad: 5,
-                opciones: ["91X00001", "91X00002", "91X00003", "91X00004", "91X00005"]  
+                opciones: ["91000861", "91000860", "91000859", "91000862", "91000405"]   
             },
             {
                 nombre: "Taza",
@@ -339,7 +339,7 @@ const packConfiguraciones = {
             {
                 nombre: "GOTERO AZUD PREMIER IMPRESIÓN 3D",
                 cantidad: 1,
-                opciones: ["91A00122"]
+                opciones: ["91A00123"]
             },
             {
                 nombre: "AZUD HELIX AUTOMATIC FT 2SV MG 130 M + SOPORTE",
@@ -359,7 +359,7 @@ const packConfiguraciones = {
             {
                 nombre: "Rollup normal",
                 cantidad: 1,
-                opciones: ["91B71637", "91B71638", "91B71639", "91B71640", "91B71641", "91B71642", "91B71643", "91B71644", "91B71645"]  
+                opciones: ["91000731", "91000792", "91000897", "91000899", "91000900", "91000896", "91000825", "91000956", "91000955", "91000903", "91000904", "91000902"] 
             },
             {
                 nombre: "USB VIDEOS",
@@ -379,17 +379,17 @@ const packConfiguraciones = {
             {
                 nombre: "Sacabocados",
                 cantidad: 5,
-                opciones: ["14S13000"]
+                opciones: ["14S07000"]
             },
             {
                 nombre: "Gorra serigrafiada",
                 cantidad: 5,
-                opciones: ["91X00037"]  
+                opciones: ["91000647"]  
             },
             {
                 nombre: "Camisetas",
                 cantidad: 5,
-                opciones: ["91X00001", "91X00002", "91X00003", "91X00004", "91X00005"]  
+                opciones: ["91000861", "91000860", "91000859", "91000862", "91000405"]  
             },
             {
                 nombre: "Bolígrafo",
@@ -959,7 +959,7 @@ function filtrarProductosPorCategoria(categoria) {
     const categoryTitleElement = document.getElementById('current-category');
     
     // Determinar la ruta de la imagen según la categoría
-    let imagenCategoria = 'media/banner-default.jpg'; // Imagen por defecto
+    let imagenCategoria = 'media/prueba_banner_merchan.jpg'; // Imagen por defecto
     
     // Aquí puedes definir imágenes específicas para cada categoría
     if (categoria !== 'Todos') {
@@ -1145,7 +1145,10 @@ function actualizarTotalGastado() {
 
 // Función para actualizar la cantidad de un producto en el carrito
 function actualizarCantidadCarrito(codigoProducto, incremento) {
-    const itemIndex = carrito.findIndex(item => item.codigo === codigoProducto);
+    // Convertir a string para evitar problemas de comparación de tipos
+    codigoProducto = String(codigoProducto);
+    
+    const itemIndex = carrito.findIndex(item => String(item.codigo) === codigoProducto);
     
     if (itemIndex === -1) return;
     
@@ -1260,24 +1263,24 @@ function actualizarContenidoCarrito() {
     const btnsDecrease = document.querySelectorAll('.quantity-btn.decrease');
     const btnsIncrease = document.querySelectorAll('.quantity-btn.increase');
     const btnsRemove = document.querySelectorAll('.remove-item');
-    
+
     btnsDecrease.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const codigo = e.target.getAttribute('data-product-code');
+        btn.addEventListener('click', function() {
+            const codigo = this.getAttribute('data-product-code');
             actualizarCantidadCarrito(codigo, -1);
         });
     });
-    
+
     btnsIncrease.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const codigo = e.target.getAttribute('data-product-code');
+        btn.addEventListener('click', function() {
+            const codigo = this.getAttribute('data-product-code');
             actualizarCantidadCarrito(codigo, 1);
         });
     });
-    
+
     btnsRemove.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            const codigo = e.target.getAttribute('data-product-code');
+        btn.addEventListener('click', function() {
+            const codigo = this.getAttribute('data-product-code');
             eliminarDelCarrito(codigo);
         });
     });
@@ -1527,7 +1530,7 @@ function exportarPDF() {
         doc.setTextColor(255, 255, 255);
         doc.text('Código', 20, y);
         doc.text('Artículo', 50, y);
-        doc.text('Talla', 100, y);
+        doc.text('Talla', 115, y);
         doc.text('Precio', 130, y);
         doc.text('Cant.', 150, y);
         doc.text('Subtotal', 170, y);
@@ -1553,7 +1556,7 @@ function exportarPDF() {
                 doc.setTextColor(255, 255, 255);
                 doc.text('Código', 20, y);
                 doc.text('Artículo', 50, y);
-                doc.text('Talla', 100, y);
+                doc.text('Talla', 115, y);
                 doc.text('Precio', 130, y);
                 doc.text('Cant.', 150, y);
                 doc.text('Subtotal', 170, y);
@@ -1569,17 +1572,20 @@ function exportarPDF() {
             filaPar = !filaPar;
 
             const codigo = String(item.codigo);
-            const articulo = item.articulo.length > 25
-              ? item.articulo.substring(0, 22) + '...'
-              : item.articulo;
+            const articulo = item.articulo;
             const talla = item.talla || 'N/A';
             const precioTxt = `${item.precio.toFixed(2)} €`;
             const cantTxt = String(item.cantidad);
             const subTxt = `${subtotal.toFixed(2)} €`;
 
             doc.text(codigo, 20, y);
-            doc.text(articulo, 50, y);
-            doc.text(talla, 100, y);
+            const articuloLineas = doc.splitTextToSize(articulo, 45);
+            doc.text(articuloLineas, 50, y);
+            // Ajustar la altura de la fila si hay múltiples líneas
+            if (articuloLineas.length > 1) {
+                y += (articuloLineas.length - 1) * 5;
+            }
+            doc.text(talla, 115, y);
             doc.text(precioTxt, 130, y);
             doc.text(cantTxt, 150, y);
             doc.text(subTxt, 170, y);
@@ -1888,7 +1894,7 @@ function mostrarNotificacion(mensaje, tipo = 'info', duracion = 3000) {
 }
 
 
-// Función para mostrar la imagen ampliada y descripción
+// Reemplazar la función mostrarImagenAmpliada con esta versión corregida
 function mostrarImagenAmpliada(producto) {
     const modal = document.getElementById('image-modal');
     const productName = document.getElementById('image-product-name');
@@ -1909,17 +1915,17 @@ function mostrarImagenAmpliada(producto) {
     };
     
     // Establecer tamaño máximo de la imagen
-    modalImage.style.maxWidth = '500px';
-    modalImage.style.maxHeight = '500px';
+    modalImage.style.maxWidth = '400px';
+    modalImage.style.maxHeight = '400px';
+    
+    // Buscar y eliminar cualquier contenedor de código existente para evitar duplicados
+    const existingCodeContainer = document.querySelector('.product-code-container');
+    if (existingCodeContainer) {
+        existingCodeContainer.remove();
+    }
     
     // Añadir el código del producto debajo del título
     const headerElement = document.querySelector('.image-modal-content .modal-header');
-    
-    // Eliminar código anterior si existe
-    const oldCodeElement = document.querySelector('.product-code-container');
-    if (oldCodeElement) {
-        oldCodeElement.remove();
-    }
     
     // Crear y añadir el nuevo contenedor de código
     const codeContainer = document.createElement('div');
@@ -2210,7 +2216,49 @@ function añadirFilaSeleccion(componentIndex, opcionesProductos, cantidadMaxima)
     `;
     
     selectionsContainer.appendChild(selectionRow);
-    
+    // Esperar a que los elementos estén completamente renderizados antes de preseleccionar
+    setTimeout(() => {
+        // Preseleccionar automáticamente si solo hay una opción
+        if (opcionesProductos.length === 1) {
+            // Seleccionar la única opción disponible
+            variantSelect.value = opcionesProductos[0].codigo;
+            
+            // Obtener la información del producto desde la opción seleccionada
+            const selectedOption = variantSelect.options[variantSelect.selectedIndex];
+            const nombre = selectedOption.getAttribute('data-nombre');
+            const precio = parseFloat(selectedOption.getAttribute('data-precio'));
+            const imagen = selectedOption.getAttribute('data-imagen');
+            
+            // Actualizar la vista previa manualmente
+            previewContainer.innerHTML = `
+                <img src="${imagen}" alt="${nombre}" class="selection-preview-image" onerror="this.src='media/placeholder.png'">
+                <div class="selection-preview-details">
+                    <div class="selection-preview-name">${nombre}</div>
+                    <div class="selection-preview-price">${precio.toFixed(2)}€</div>
+                </div>
+            `;
+            
+            // Establecer la cantidad requerida directamente si es la única opción
+            if (obtenerCantidadSeleccionadaComponente(componentIndex) === 0) {
+                // Solo ajustar la cantidad si no hay otras selecciones para este componente
+                quantityInput.value = cantidadMaxima;
+                
+                // Actualizar en las selecciones de usuario
+                actualizarSeleccionUsuario(
+                    componentIndex,
+                    selectionId,
+                    opcionesProductos[0].codigo,
+                    nombre,
+                    precio,
+                    cantidadMaxima
+                );
+                
+                // Actualizar la visualización
+                actualizarProgresoComponente(componentIndex);
+                actualizarTotalPack();
+            }
+        }
+    }, 100); // Pequeño retraso para asegurar que los elementos están renderizados
     // Obtener elementos
     const variantSelect = selectionRow.querySelector('.product-variant-select');
     const quantityInput = selectionRow.querySelector('.quantity-input');
